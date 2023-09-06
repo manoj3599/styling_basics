@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <style>
+      #div1:hover {
+        color: white;
+      }
+
+      #name-input:focus {
+        color: brown;
+        border: 2px solid black !important;
+      }
+
+      li:first-child {
+        font-family: "Courier New", Courier, monospace;
+      }
+      li:nth-child(2n + 1) {
+        color: pink;
+      }
+      li:nth-child(2n) {
+        color: greenyellow;
+      }
+
+      li:nth-child(2) {
+        color: white;
+      }
+
+      input:last-of-type {
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">Some text here</div>
+
+    <input id="name-input" type="text" name="name" />
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>REACT</li>
+      <li>NODE JS</li>
+    </ul>
+
+    <input id="email-input" type="email" name="email" />
+  </body>
+</html>

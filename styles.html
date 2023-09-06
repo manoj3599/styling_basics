@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <style>
+      #div1 {
+        height: 200px;
+        width: 200px;
+      }
+
+      div {
+        font-weight: bold;
+      }
+      /*comabinator*/
+      div span {
+        font-family: cursive;
+      }
+
+      div > span {
+        color: blue;
+      }
+
+      /*to target after div */
+      div + span {
+        color: green;
+      }
+      /*general sibling selector after span */
+      div ~ span {
+        font-weight: 500;
+        color: brown;
+      }
+      a {
+        color: darkblue;
+      }
+
+      a:active {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center: 200px ;">Introduction to Css</h1>
+
+    <div id="div1">Text in 1st div</div>
+
+    <div class="grp1">text added in div</div>
+
+    <span class="grp1"> Some text here </span>
+
+    <div class="grp2">
+      <p>
+        <span>Some text heree in paragraph </span>
+      </p>
+      <span>Some more text here</span>
+    </div>
+
+    <span> Span after neighbour </span>
+    <span> Span after neighbour +1</span>
+    <span> Span after neighbour +2</span>
+    <span> Span after neighbour +3</span>
+
+    <a href="https://www.wikipedia.org/"><strong>wikipedia</strong></a>
+  </body>
+</html>
